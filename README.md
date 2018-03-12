@@ -209,12 +209,14 @@ sed
 ifconfig | awk -F'[ :]+' '/inet addr:192/{print $4}'
 
 15 关于rm:
-rm -rf (可用删除文件夹）
+
+    rm -rf #可用删除文件夹
 
 16关于ls:
 
-ls -ah (可以显示.开头的文件）
-Ls -l (可以显示储存和权限等数据）
+    ls -ah #可以显示.开头的文件
+    ls -l #可以显示储存和权限等数据
+    ls -lh #If we wish to use human-readable sizes
 
 
 
