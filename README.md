@@ -15,6 +15,8 @@
 ## 14.关于rm
 ## 15.关于ls
 ## 16.添加环境变量的一般方法
+## 17.安装deb软件包
+## 18.Ubuntu创建shortcut
 
 
 z.进入root：sudo -i
@@ -222,8 +224,15 @@ ifconfig | awk -F'[ :]+' '/inet addr:192/{print $4}'
 ## 16.添加  环境变量的一般方法：
 
     export PATH=/you/path/.../bin:$PATH
+    
+## 17.安装deb软件包：
+ 
+    sudo apt-get install --no-install-recommends gnome-panel
 
+## 18.Ubuntu创建shortcut：
 
+    sudo apt-get install --no-install-recommends gnome-panel
+    gnome-desktop-item-edit ~/Desktop/ --create-new
 
 
 
