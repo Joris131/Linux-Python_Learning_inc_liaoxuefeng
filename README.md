@@ -17,6 +17,8 @@
 ## 16.添加环境变量的一般方法
 ## 17.安装deb软件包
 ## 18.Ubuntu创建shortcut
+## 19.设置文件（夹）权限
+## 20.cd命令返回上一级及下一级文件夹
 
 
 z.进入root：sudo -i
@@ -234,6 +236,20 @@ ifconfig | awk -F'[ :]+' '/inet addr:192/{print $4}'
     sudo apt-get install --no-install-recommends gnome-panel
     gnome-desktop-item-edit ~/Desktop/ --create-new
 
+## 19.加入-R 参数，就可以将读写权限传递给子文件夹例如：
+    
+    chmod -R 777 /home/mypackage
+### 一般文件如下：
+    chmod u=rwx,go=rx .bashrc 
+    chmod u=rwx,g=rx,o=r filename
+    chmod 754 filename
+    chmod 777 filename
+#### 注意喔！那个 u=rwx,go=rx 是连在一起的，中间并没有任何空格符！
+
+## 20.cd命令返回上一级及下一级文件夹
+ 
+    cd ../
+    cd ..
 
 
 ## 廖雪峰教程
