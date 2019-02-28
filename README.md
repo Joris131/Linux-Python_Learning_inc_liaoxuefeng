@@ -19,6 +19,7 @@
 ## 19. 设置文件（夹）权限
 ## 20. cd命令返回上一级及下一级文件夹
 ## 21. 进入root
+## 22. to see a tab deliminated file in terminal
 
 z.进入root：sudo -i
 ## 01. 列表更新sudo apt-get update
@@ -136,3 +137,5 @@ ifconfig | awk -F'[ :]+' '/inet addr:192/{print $4}'
 
 ### sudo -i
 
+## 22. to see a tab deliminated file in terminal
+    column -t -s $'\t' 1805409757.clean.rmhost.20M_metaphlan_bugs_list.tsv | less -S
