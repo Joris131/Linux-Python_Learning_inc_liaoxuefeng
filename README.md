@@ -1,7 +1,7 @@
 # 目录
 ## 01. 列表更新
 ## 02. 安装可用更新
-## 03. 在linux中如何终止指令的运行
+## 03.在linux中终止某个进程
 ## 04. 终端退出Python
 ## 05. Linux的小数转化
 ## 06. 查看IP地址
@@ -22,33 +22,31 @@
 ## 22. to see a tab deliminated file in terminal
 
 z.进入root：sudo -i
-## 01. 列表更新sudo apt-get update
+## 01. 列表更新
+    sudo apt-get update
 
-## 02.安装可用更新sudo apt-get upgrade
+## 02.安装可用更新
+    sudo apt-get upgrade
 
-## 03.在linux中如何终止指令的运行：
-Ctrl + C 就可以了
-如果是要终止某个进程，输入以下指令
-kill 1234（进程ID）
-或
-killall firefox（进程名字）
+## 03.在linux中终止某个进程
+    kill 1234（进程ID）
+    
 ## 04. 终端退出Python：Ctrl+D
 
 ## 05. Linux 中的小数属于浮点数，一般的输入会视为整数，所以想要有小数时，需用到 float 相关的转化，例如：
 
-[ ] 是list，是可变的；
-（  ） 是 tuple，其中的元素是不可变的；
-{key-value } 是dict，其中的key是不可变的,但dict是可变的。
+### [ ] 是list，是可变的；
+### （  ） 是 tuple，其中的元素是不可变的；
+### {key-value } 是dict，其中的key是不可变的,但dict是可变的。
 
 ## 06.查看IP地址：
-ifconfig -a
+    ifconfig -a
 
 ## 08. Linux的命令有很多，但不可能全部都记住，所以要学会查询相关命令，可有2个方法：
-（1）
 
 ## 09. 如何删除ubuntu用户？
-          ubuntu删除用户同样是在终端下操作的，需要注意的是，如果要删除的用户当前已登陆，是删除不掉的，必须注销掉当前用户切换为另一个用户下，才能删除。举个例子，刚才我新建立了一个用户为 yang 的用户，例如我现在用用户 yang 登陆了桌面，此时如果我想删除 yang 这个用户，是删除不掉的。正确的操作方法是，我注销掉 yang，然后使用 root 登陆到桌面，再删除 yang 即可。
-          删除ubuntu用户的命令比较容易记：sudo userdel username，例如我想删除 yang ，则输入：sudo userdel yang，删除成功后，系统无任何提示。
+### ubuntu删除用户同样是在终端下操作的，需要注意的是，如果要删除的用户当前已登陆，是删除不掉的，必须注销掉当前用户切换为另一个用户下，才能删除。举个例子，刚才我新建立了一个用户为 yang 的用户，例如我现在用用户 yang 登陆了桌面，此时如果我想删除 yang 这个用户，是删除不掉的。正确的操作方法是，### 我注销掉 yang，然后使用 root 登陆到桌面，再删除 yang 即可。
+    sudo userdel username
 
 ## 10. Ubuntu中Libre的字体问题
 用Liberation Serif替代Times new Roman；Ubuntu 默认的简体中文字体有三种：AR PL UKai 是一种楷体，AR PL UMing 是一种宋体，Droid Sans Fallback 是一种黑体。最后一种负责在 Ubuntu 平台上显示中文。
