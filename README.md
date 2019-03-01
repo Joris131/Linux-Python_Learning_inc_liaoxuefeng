@@ -20,6 +20,7 @@
 ## 20. cd命令返回上一级及下一级文件夹
 ## 21. 进入root
 ## 22. to see a tab deliminated file in terminal
+## 23. to get the absolute path of certain file with certain characteristics
 
 z.进入root：sudo -i
 ## 01. 列表更新
@@ -137,3 +138,10 @@ ifconfig | awk -F'[ :]+' '/inet addr:192/{print $4}'
 
 ## 22. to see a tab deliminated file in terminal
     column -t -s $'\t' 1805409757.clean.rmhost.20M_metaphlan_bugs_list.tsv | less -S
+    
+## 23. to get the absolute path of certain file with certain characteristics
+### The locate command is faster than the find command because it uses a previously built database
+
+    sudo updatedb
+    
+    locate [options] name(s)
